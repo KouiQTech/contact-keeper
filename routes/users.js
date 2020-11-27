@@ -26,7 +26,7 @@ router.post("/",
    try{
     let user= await User.findOne({email: email});
     if(user){
-      return res.status(400).json({msg: "already exists"});
+      return res.status(400).json({msg: "Email already exists"});
     }
     user = new User({
       name,
