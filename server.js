@@ -11,8 +11,8 @@ connectDB();
 // Init Midleware
 app.use(express.json({extended: false}));
 
-app.get("/", (req, res)=>
-res.json({msg: "welcome"}));
+// app.get("/", (req, res)=>
+// res.json({msg: "welcome"}));
 
 
 // Define Routes
